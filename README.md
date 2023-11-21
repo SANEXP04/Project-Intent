@@ -1,4 +1,5 @@
 # Tugas Pertemuan 9
+# Intent-App
 Nama &nbsp; &nbsp;: Ihsan Hadimulya<br>
 NIM&nbsp; &nbsp; &nbsp; : 312210047<br>
 Kelas&ensp; &nbsp; : TI.22.A1<br>
@@ -9,16 +10,13 @@ Membuat Project Aplikasi Intent, yang menghubungkan semua activity yang sudah di
 ![image](https://github.com/RhendyDikiN/Intent-App/assets/115677376/0e21e70e-b6a4-480b-9c4b-885e213a0c39)
 
 ## 1. Launcher Splash Logo
-Pertama, yang akan Saya lakukan adalah membuat Launcher Splash Logo, atau menampilkan logo saat kita pertama kali membuka aplikasi.<br>
+Pertama-tama , yang kita lakukan adalah membuat Launcher Splash Logo terlebih dahulu, atau menampilkan logo saat kita pertama kali membuka aplikasi.<br>
 Caranya adalah :<br>
 
-- Membuat sebuah Drawable Resource File baru, untuk background logo launcher kita nanti. Buat file baru pada directory *res/drawable/disini*.<br>
-![new](https://github.com/RhendyDikiN/Intent-App/assets/115677376/42df77da-946c-4636-a367-99a6a4886097)<br>
-
-- Jika file berhasil dibuat, kita tambahkan terlebih dahulu logo yang kita miliki ke dalam project kita, caranya hanya copy logonya, lalu paste di folder *drawable* tadi.<br>
-![copaslogo](https://github.com/RhendyDikiN/Intent-App/assets/115677376/08239c2f-0d4d-4f3d-bdbd-4521a29d39e0)<br>
-
+- Membuat sebuah Drawable Resource File baru, untuk background logo launcher kita nanti. Buat file baru pada directory *res/drawable/*.<br>
+- Jika file telah berhasil dibuat, selanjutnya kita tambahkan terlebih dahulu gambar logo yang kita inginkan ke dalam project kita, caranya hanya copy logonya, lalu paste di folder *drawable* tadi.<br>
 - Lalu buka backgroundlauncher.xml yang sudah dibuat tadi, dan masukan code ini :<br>
+
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
@@ -30,9 +28,9 @@ Caranya adalah :<br>
     </item>
 </layer-list>
 ```
->warna bisa menyesuaikan dengan keinginan, lalu masukan logo yang sudah kita tambahkan tadi.<br>
+> untuk warna bisa kita ubah menyesuaikan dengan yang kita inginkan, lalu masukan logo yang sudah kita tambahkan tadi.<br>
 
-- Lalu, buka **themes.xml** yang letaknya ada di *res/values/themes*, dan tambahkan code ini didalam resourcesnya :<br>
+- setelah itu, buka **themes.xml** yang letaknya ada di *res/values/themes*, dan masukkan code ini didalam resourcesnya :<br>
 ```
   <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowBackground">@drawable/backgroundlauncher</item>
@@ -40,9 +38,9 @@ Caranya adalah :<br>
   </style>
 ```
 
-- Lanjut, kita buat java class nya, agar splashscreen bisa berjalan.<br>
-![ezgif com-video-to-gif](https://github.com/RhendyDikiN/Intent-App/assets/115677376/b2548459-9ed2-4cbe-8582-2f3153ae8796)<br>
-didalam SplashScreen.java ini, kita buat codenya, seperti ini :<br>
+- Selanjutnya, kita buat java class nya, agar splashscreennya bisa berjalan.<br>
+
+didalam SplashScreen.java, kita buat codenya, seperti ini :<br>
 ```
 package com.example.tugassembilan;
 
@@ -67,9 +65,9 @@ public class SplashScreen extends AppCompatActivity {
     }
 }
 ```
->code ini berguna untuk menampilkan splashcreen, ketika splashscreen selesai dalam 2.5 detik nanti akan langsung berpindah ke MainActivity.java.<br>
+>code ini berguna untuk menampilkan splashcreen, ketika splashscreen selesai dalam 2.5 detik maka akan langsung berpindah ke MainActivity.java.<br>
 
-- Buka **AndroidManifest.xml**, dan tambahkan code berikut didalam *application* :<br>
+- Buka **AndroidManifest.xml**, lalu tambahkan code berikut didalam *application* :<br>
 ```
         <activity
             android:name=".SplashScreen"
@@ -82,6 +80,7 @@ public class SplashScreen extends AppCompatActivity {
         </activity>
 ```
 Dengan ini, perintah membuat Launcher Splash Logo sudah selesai, lanjut ke tahap berikutnya yaitu membuat menu untuk menampilkan semua project yang sudah dibuat pada pertemuan sebelumnya.<br>
+
 
 ## 2. Menu Utama
 Yang kedua, disini Saya akan membuat menu utamanya yang akan berjalan setelah SplashScreen Logo tadi.<br>
