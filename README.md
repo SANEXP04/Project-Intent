@@ -163,7 +163,8 @@ Caranya adalah:<br>
 ```
 >Background disini sesuai dengan keinginan, tambahkan gambar kedalam folder *drawable* seperti memasukan logo pada cara sebelumnya.<br>
 >Tampilan desain:<br>
->![image](https://github.com/RhendyDikiN/Intent-App/assets/115677376/6bdc4699-0318-4e93-9a91-9a319cf06427)
+>![Screenshot_2023-11-21-23-08-57-97_03db2125c870ab7e379f27e3758eaf89](https://github.com/SANEXP04/Project-Intent/assets/115678077/9c93ab2f-76fd-47d0-9524-fdb0ce3a83db)
+
 
 - Setelah itu kita buka, MainActivity.java untuk menambahkan code intent untuk masing-masing tombol.<br>
 ```
