@@ -5,7 +5,7 @@ Kelas&ensp; &nbsp; : TI.22.A1<br>
 Dosen &nbsp; : Donny Maulana, S.Kom., M.M.S.I.<br><br>
 
 ## Perintah Tugas
-Project membuat aplikasi intent, yang menghubungkan semua activity yang sudah dibuat sebelumnya.<br>
+Membuat Project Aplikasi Intent, yang menghubungkan semua activity yang sudah dibuat sebelumnya.<br>
 ![image](https://github.com/RhendyDikiN/Intent-App/assets/115677376/0e21e70e-b6a4-480b-9c4b-885e213a0c39)
 
 ## 1. Launcher Splash Logo
